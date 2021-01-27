@@ -1,0 +1,100 @@
+.button{
+    -fx-background-color: #303030;
+    -fx-text-fill: #ff4500;
+}
+
+#resultLabel{
+    -fx-text-fill: #808080;
+}
+
+.label {
+    -fx-text-fill: #ff4500;
+}
+
+#mainBackground {
+    -fx-background-color: #202020;
+}
+
+.menu-button .label {
+ -fx-text-fill: #a9a9a9;
+}
+
+.menu-button  {
+ -fx-background-color: #181818;
+}
+
+.menu-item .label {
+    -fx-text-fill: #a9a9a9;
+}
+
+.menu-item:focused {
+     -fx-background-color: #ff4500;
+}
+
+.menu-item:focused .label {
+    -fx-text-fill: #181818;
+}
+
+.context-menu {
+    -fx-background-color: #181818;
+}
+
+.menu-bar {
+    -fx-background-color: #303030;
+    -fx-text-fill: black;
+}
+
+.combo-box .cell{
+    -fx-text-fill: #a9a9a9;
+
+}
+
+.combo-box {
+    -fx-background-color: #303030;
+}
+
+.text-field {
+
+        -fx-background-color: #303030;
+        -fx-prompt-text-fill: #a9a9a9;
+}
+
+.text-field  .label{
+        -fx-text-fill: #303030;
+        -fx-prompt-text-fill: #a9a9a9;
+}
+
+.my-list-cell {
+    -fx-text-fill: blue;
+    -fx-background-color: #a9a9a9;
+}
+
+.combo-box .list-view .list-cell{
+    -fx-background-color: #303030;
+}
+
+.combo-box-popup .list-view .list-cell:hover {
+    -fx-text-fill: #ff4500;
+}
+
+.text-input{
+    -fx-text-fill: #a9a9a9;
+}
+
+.text-area .content{
+      -fx-background-color: #303030;
+}
+
+.text-area {
+      -fx-background-color: #ff4500;
+}
+
+.radio-button:selected .radio .dot {
+    -fx-background-color: #181818;
+    -fx-background-insets: 0;
+}
+
+.radio-button {
+    -fx-text-fill: #ff4500;
+}
+

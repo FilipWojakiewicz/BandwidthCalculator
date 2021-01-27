@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" minHeight="600.0" minWidth="400.0" prefHeight="600.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AboutWindowController">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <VBox fx:id="mainBackground" alignment="CENTER" prefHeight="800.0" prefWidth="500.0" spacing="100.0" GridPane.rowIndex="2">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+         <children>
+            <TextArea fx:id="textArea" prefHeight="600.0" prefWidth="500.0" promptText="TEXT" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font></TextArea>
+            <Button fx:id="backButton" mnemonicParsing="false" onAction="#onBackButtonClick" onMouseEntered="#handleMouseEnter" onMouseExited="#handleMouseExit" prefWidth="70.0" text="Back" textFill="ORANGERED">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <MenuBar fx:id="menuBar" prefWidth="500.0" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1">
+         <menus>
+            <Menu mnemonicParsing="false" text="Menu">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#setHomeScene" text="Home" />
+                  <MenuItem fx:id="closeMenu" mnemonicParsing="false" onAction="#closeApp" text="Close" />
+               </items>
+            </Menu>
+            <Menu fx:id="settingsMenu" mnemonicParsing="false" text="Settings">
+               <items>
+                  <Menu mnemonicParsing="false" text="Theme">
+                     <items>
+                        <MenuItem fx:id="darkTheme" mnemonicParsing="false" onAction="#onThemeModeButtonClick" text="Dark" />
+                        <MenuItem fx:id="lightTheme" mnemonicParsing="false" onAction="#onThemeModeButtonClick" text="Light" />
+                        <MenuItem fx:id="blueTheme" mnemonicParsing="false" onAction="#onThemeModeButtonClick" text="Blue" />
+                     </items>
+                  </Menu>
+               </items></Menu>
+            <Menu mnemonicParsing="false" onAction="#onLearnItemClick" text="Informations">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Learn more" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </children>
+</GridPane>
